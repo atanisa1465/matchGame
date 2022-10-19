@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afifa's Match Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Amatic+SC:wght@700&family=Rokkitt:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Rokkitt:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="initializer();">
+    <div class="wrapper">
+      <h1> The Match Game </h1>
+	    <div id = "instructions"> Welcome to the match game! Click on each image and find its matching pair. Every card you select will be one click. You have unlimited clicks, but see if you can get it in 16! </div>
+      <br>
+      <div class="game-container"></div>
+      <br>
+      <div class="stats-container">
+        <div id="moves-count"></div>
+        <p id="result"></p>
+      </div>
+      <button id="stop" class="hide">Reset Game</button>
+    </div>
+    
+    <div class="controls-container">
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 65px;
+	text-align: center;
+	font-color: #1b345c;
+  padding:5px;
+}
+
+#instructions {
+  text-align: center;
+	font-family: 'Abyssinica SIL', serif;
+	font-size: 12px;
+}
+
+body {
+  background: url("images/Untitled presentation.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.wrapper {
+  box-sizing: content-box;
+  width: 26.87em;
+  padding: 10px;
+  background-color: #ffebfe;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  gap: 0.6em;
+}
+
+.stats-container {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+.card-container {
+  position: relative;
+  width: 6.25em;
+  height: 6.25em;
+  cursor: pointer;
+}
+.card-before, .card-after {
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000;
+  transition: transform 0.7s ease-out;
+  backface-visibility: hidden;
+}
+
+.card-before {
+  background-color: white;
+  font-size: 2.8em;
+  font-weight: 600;
+}
+
+.card-after {
+  background-color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-before {
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-after {
+  transform: rotateY(0deg);
+}
+
+button {
+  border: none;
+  border-radius: 0.3em;
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+
+#stop {
+  font-size: 0.8em;
+  display: block;
+  margin: 1.1em auto 0 auto;
+  background-color: #c2d9fc;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+#result {
+  text-align: center;
+}
+/* 
+#result h2 {
+  font-size: 2.5em;
+}
+
+#result h4 {
+  font-size: 1.8em;
+  margin: 0.6em 0 1em 0;
+} */
+
+.image {
+  width: 100px;
+  height: 90px;
+}
